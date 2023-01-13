@@ -16,7 +16,7 @@ namespace BenchmarkList
             Console.WriteLine(summary);
         }
     }
-    
+
     public class BenchmarkLists
     {
         private readonly List<int> number;
@@ -35,12 +35,12 @@ namespace BenchmarkList
         [Benchmark]
         public bool UsingCountProperty()
         {
-            return this.number.Count>0;
+            return this.number.Count > 0;
         }
-        [Benchmark] 
+        [Benchmark]
         public bool UsingCountFunction()
         {
-            return this.number.Count()>0;
+            return this.number.Count() > 0;
         }
     }
 }
